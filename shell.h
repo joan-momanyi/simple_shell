@@ -8,5 +8,7 @@
 
 int _strlen(char *strg);
 int _printstrg(char *strg);
-void our_prompt(void);
+char *our_prompt(void);
+char **tokenize(char *strg);
+char _strdup(char *strg);
 #endif
