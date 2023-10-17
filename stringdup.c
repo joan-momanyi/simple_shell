@@ -8,24 +8,24 @@
  */
 char *_strdup(char *strg)
 {
-int x, len;
-char *p;
-len = _strlen(strg);
-if (strg == NULL)
-return ((char *)NULL);
-else
-{
-p = malloc(sizeof(char) * (len + 1));
-if (p == NULL)
-return ((char *)NULL);
-else
-{
-for (x = 0; x < len; x++)
-{
-p[x] = str[x];
-}
-p[len] = '\0';
-return (p);
-}
-}
+	int x, len;
+	char *p;
+	len = _strlen(strg);
+	
+	
+	if (strg == NULL)
+		return ((char *)NULL);
+	else{
+		p = malloc(sizeof(char) * (len + 1));
+		if (p == NULL)
+			return ((char *)NULL);
+		else{
+			for (x = 0; x < len; x++)
+			{
+				p[x] = strg[x];
+			}
+			p[len] = '\0';
+			return (p);
+		}
+	}
 }

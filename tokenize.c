@@ -14,7 +14,7 @@ strg_cpy = _strdup(strg);
 tkn = strtok(strg_cpy, " \n");
 if (tkn == NULL)
 {
-free(str_cpy);
+free(strg_cpy);
 exit(1);
 }
 while (tkn)
@@ -22,7 +22,7 @@ while (tkn)
 arg_count++;
 tkn = strtok(NULL, " \n");
 }
-free(str_cpy);
+free(strg_cpy);
 array = (char **)malloc((arg_count + 1) * sizeof(char *));
 if (array == NULL)
 {
