@@ -10,12 +10,12 @@ int _printstrg(char *strg)
 	int a;
 	
 	if (strg == NULL)
-		exit(1);
+		exit(EXIT_FAILURE);
 	
 	a = write(STDOUT_FILENO, strg, _strlen(strg));
 	if (a == -1){
 		perror("Could not print");
-		return (-1);
+		exit(EXIT_FAILURE);
 	}
 	else
 		return (a);
