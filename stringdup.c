@@ -22,7 +22,7 @@ else
 {
 for (x = 0; x < len; x++)
 {
-p[x] = str[x];
+p[x] = strg[x];
 }
 p[len] = '\0';
 return (p);

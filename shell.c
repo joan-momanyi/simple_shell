@@ -6,12 +6,13 @@
  * Return: Always 0.
  */
 
-int main(char **env)
+int main(void)
 {
 char *s_input = NULL;
 char **s_array;
 pid_t s_childpid;
 int x, status;
+extern char *environ;
 while (1)
 {
 s_input = our_prompt();

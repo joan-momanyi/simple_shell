@@ -10,5 +10,5 @@ int _strlen(char *strg);
 int _printstrg(char *strg);
 char *our_prompt(void);
 char **tokenize(char *strg);
-char _strdup(char *strg);
+char *_strdup(char *strg);
 #endif
