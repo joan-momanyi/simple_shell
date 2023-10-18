@@ -7,15 +7,16 @@
  */
 int _printstrg(char *strg)
 {
-int a;
-if (strg == NULL)
-exit(1);
-a = write(STDOUT_FILENO, strg, _strlen(strg));
-if (a == -1)
-{
-perror("Could not print");
-return (-1);
-}
-else
-return (a);
+	int a;
+	
+	if (strg == NULL)
+		exit(1);
+	
+	a = write(STDOUT_FILENO, strg, _strlen(strg));
+	if (a == -1){
+		perror("Could not print");
+		return (-1);
+	}
+	else
+		return (a);
 }
