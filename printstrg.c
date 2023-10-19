@@ -7,16 +7,15 @@
  */
 int _printstrg(char *strg)
 {
-	int a;
-	
-	if (strg == NULL)
-		exit(EXIT_FAILURE);
-	
-	a = write(STDOUT_FILENO, strg, _strlen(strg));
-	if (a == -1){
-		perror("Could not print");
-		exit(EXIT_FAILURE);
-	}
-	else
-		return (a);
+int a;
+if (strg == NULL)
+exit(EXIT_FAILURE);
+a = write(STDOUT_FILENO, strg, _strlen(strg));
+if (a == -1)
+{
+perror("Could not print");
+exit(EXIT_FAILURE);
+}
+else
+return (a);
 }
